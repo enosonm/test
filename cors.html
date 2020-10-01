@@ -15,7 +15,7 @@ console.log(a);
 xhttp.send("data="+a);
 }
 };
-xhttp.open("POST", "https://collector.zivver.com/com.snowplowanalytics.snowplow/tp2", true);
+xhttp.open("POST", "https://api.segment.io/v1/identify", true);
 xhttp.withCredentials = true;
 xhttp.send();
 }
