@@ -1,0 +1,9 @@
+<script>
+  function listener(event) {
+    alert(JSON.stringify(event.data));
+  }
+
+  var dest = window.open("https://www.upwork.com/ab/create-profile/core-api/city/autocomplete?query=mad&countryCode=IN&sessionToken=55aa20b3-773d-46fc-955a-4b6d46dccf2c");
+
+  window.addEventListener("message", listener);
+</script>
